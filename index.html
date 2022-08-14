@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Gerador de senhas, gerator password">
+    <meta name="author" content="Manuel Kalueka">
+
+    <title>Gerador de Senha</title>
+
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <img src="assets/logo.png" alt="Gerador de Senha logo" class="logo">
+
+    <main class="container-input">
+        <span>Tamanho <span id="tamanho-senha"></span> caracteres</span>
+        <input type="range" class="input-tamanho" id="input-tamanho" value="8" min="4" max="25">
+
+        <button id="button" class="button-cta">Gerar Senha</button>
+    </main>
+
+    <div class="container-password hide" id="container-password">
+        <span class="title">Sua senha gerada foi:</span>
+        <span id="show-password" class="password"></span>
+        <span class="tooltip">Clique na senha para copiar.👆</span>
+    </div>
+
+
+    <footer>
+        &COPY; Manuel Kalueka
+    </footer>
+    <script src="app/app.js"></script>
+</body>
+
+</html>
