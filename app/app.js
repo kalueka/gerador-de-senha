@@ -28,9 +28,13 @@ function geraSenha() {
     novaSenha = senhaGerada;
 }
 
-function copySenha() {
+async function copySenha() {
     alert('Senha copiada com sucesso!');
-    navigator.clipboard.writeText(novaSenha);
+    try{
+        await navigator.clipboard.writeText(novaSenha);
+    }catch(error) {
+        console.log(error)
+    }
 }
 
 button.addEventListener('click', () => {
